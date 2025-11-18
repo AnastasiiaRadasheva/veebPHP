@@ -29,4 +29,19 @@ echo "</dt>";
     </pre>
 </li>
 <?php
+echo "<ol>";
 echo "<li>GITHUB projektiga sidumine";
+echo "<pre>";
+echo "git remote add origin git@github.com:AnastasiiaRadasheva/veebPHP.git
+git branch -M main
+git push -u origin main";
+echo "</pre>";
+echo "</li>";
+echo "<li>Projekti kloonimine desktopi. <br> 
+*Kontroll et id_rsa võti on olemas. ssh kaustas. <br>
+*GIT CMD on lahti ja <br>";
+echo "<pre>";
+echo "git clone ";
+echo "</pre>";
+echo "</li>";
+echo "</ol>";
