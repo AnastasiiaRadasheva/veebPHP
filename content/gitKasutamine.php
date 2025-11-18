@@ -1,7 +1,7 @@
 <?php
 echo "<h2> GIT käsud </h2>>";
-echo "<li> Repo loomine";
 echo "<ol>";
+echo "<li> Repo loomine";
 echo "<pre>git init</pre>";
 echo "</dt>";
 ?>
@@ -14,7 +14,7 @@ echo "</dt>";
     git config --global --list
 </pre>
 </li>
-<li>
+<li> SSH key loomine
 <pre>
     ssh-keygen -o -t rsa -C "eha20082@gmail.com"
 </pre>

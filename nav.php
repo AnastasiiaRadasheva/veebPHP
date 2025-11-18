@@ -1,10 +1,14 @@
 <nav>
     <ul>
         <li><a href="?link=avaleht.php">Avaleht</a></li>
-        <li><a href="?link=too1.php">Töö</a>
+        <li><a href="?link=RaamatJS.php">Raamatukogu JS</a>
         </li>
+        <li><a href="?link=JSmuusika.php">Muusika Küs JS</a>
+        <li><a href="?link=ajafunk.php">Ajafunktsioonid</a>
+        </li>
+
         <li><a href="?link=gitKasutamine.php">Git kasud</a>
         </li>
-        <li><a href="https://anastasiiaradasheva24.thkit.ee/">Vana index</a></li>
+        <li><a href="https://anastasiiaradasheva24.thkit.ee/" target="_blank">Vana index</a></li>
     </ul>
 </nav>

@@ -1,5 +1,66 @@
 header {
-    background-color: #f1f1f1;
+    background-color: lightpink;
     text-align: center;
     padding: 10px;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+footer {
+    background-color: lightpink;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+div.uuscontainer{
+    border-radius: 2px;
+    background-color: lightpink ;
+    border: solid 1px hotpink;
+    bottom: 0;
+    flex: auto;
+}
+div.container {
+    display: flex;
+    flex-direction: row;
+
+}
+@media screen and (max-width: 600px){
+    div.container{
+        flex-direction: column;
+    }
+}
+div.container > div{
+    margin:10px;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px darkgray;
+}
+img{
+
 }
