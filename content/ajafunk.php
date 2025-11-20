@@ -12,7 +12,8 @@ echo "<br>";
 echo "date('d.m.Y G:i:s',time())";
 echo "</div>";
 echo "<div class='uuscontainer'>";
-echo "<br>";
+
+echo "<h3><strong>Tähendus</strong></h3>";
 echo "<pre>d- päev o1...31
 m- kuu 01...12
 Y- aasta - nelja kohane arv
@@ -24,7 +25,6 @@ echo "</pre>";
 echo "</div>";
 echo "<div class='uuscontainer'>";
 echo "<h3> <strong>Tehted kuupäevaga</strong> </h3>";
-echo "<br>";
 echo "+1 min = time()+60 : ".date("d.m.Y G:i:s",time()+60);
 echo "<br>";
 echo "+1 tunt = time()+60*60 : ".date("d.m.Y G:i:s",time()+60*60);
@@ -43,7 +43,7 @@ echo "<br>";
 echo "</div>";
 echo "<div class='uuscontainer'>";
 echo "<h3>Massivi abil näidata kuu  nimega</h3>";
-echo "<br>";
+
 $kuud=array(1=>'jaanuar', 'veebruar', 'märts', 'aprill', 'mai', 'juuni', 'juuli', 'august',
     'september', 'oktoober', 'november', 'detcember');
 $aasta=date("Y");

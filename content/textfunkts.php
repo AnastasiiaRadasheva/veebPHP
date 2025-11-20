@@ -8,7 +8,8 @@ function clearVarsExcept($url, $varname)
     return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
     
 }
-echo "<h2>Tekstfunktsioonid</h2>";
+echo "<div class='uuscontainer'>";
+echo "<h3>Tekstfunktsioonid</h3>";
 $tekst = 'Php on skriptikeel serveripoolne';
 echo $tekst;
 echo "<br>";
@@ -38,6 +39,8 @@ echo "eemaldab tekstist tühikuid  vasakult trim () = ".ltrim($tekst2);
 echo "<br>";
 echo "eemaldab tekstist tühikuid paremalt  trim () = ".rtrim($tekst2);
 echo "<br>";
+echo "</div>";
+echo "<div class='uuscontainer'>";
 echo "<h3> Tekst kui massiiv</h3>";
 echo "$'tekst'[0] - 1. täht massiivis : ".$tekst[0];
 echo "<br>";
@@ -58,6 +61,8 @@ print_r(str_word_count($tekst,2));
 //määrab mis sümbol on iga sõna alguses
 
 echo "<br>";
+echo "</div>";
+echo "<div class='uuscontainer'>";
 echo "<h2>Teksti asendamine - replace</h2>";
 echo "<br>";
 $asendus= 'JavaScript';
@@ -69,6 +74,8 @@ $otsi=array('PHP','serveripoolne');
 $asendav = array('Javascript','kliendipoolne');
 echo str_replace($otsi,$asendav, $tekst);
 echo "<br>";
+echo "</div>";
+echo "<div class='uuscontainer'>";
 echo "<h2>Mõistatus.Arva ära Eesti linnanimi</h2>";
 echo "<br>";
 //tee 5 -6 tekstfunkts mis aitavad aru saada miline linnanimi oli.
@@ -102,6 +109,7 @@ print_r(str_word_count($linn,2));
 //7
 echo "<li>"."Mitu tähte on sõnades ühesugused Tartu ja Tallinn : ".similar_text($linn,"Tallinn"."</li>");
 echo "</ol>";
+echo "</div>";
 ?>
 <form name ="tekstkontroll" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method = "post"
     <label for ="linn">Sisesta linnanimi</label>
