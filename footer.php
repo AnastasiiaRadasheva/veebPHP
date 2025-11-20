@@ -3,6 +3,6 @@
 <?php
 echo date("d.m.Y H:i:s");
 echo "<br>";
-echo "PHP leht tegi õpetaja";
+echo "PHP leht tegi õpilane";
 ?>
 </footer>
