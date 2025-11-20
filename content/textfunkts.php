@@ -125,6 +125,4 @@ if(isset($_REQUEST["linn"])){
         echo $_REQUEST["linn"]." on vale!";
     }
 }
-echo "";
-echo "<br>";
-echo "trer";
+
