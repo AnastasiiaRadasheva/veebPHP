@@ -43,6 +43,7 @@ div.uuscontainer{
     border: solid 1px hotpink;
     bottom: 0;
     flex: auto;
+    margin: 20px;
 }
 div.container {
     display: flex;

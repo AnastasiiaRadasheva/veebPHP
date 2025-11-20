@@ -1,4 +1,13 @@
 <?php
+function clearVarsExcept($url, $varname)
+{
+    $url = basename($url);
+    if(str_starts_with($url, '?')){
+        return "?$varname=".$_REQUEST[$varname];
+    }
+    return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
+    
+}
 echo "<h2>Tekstfunktsioonid</h2>";
 $tekst = 'Php on skriptikeel serveripoolne';
 echo $tekst;
@@ -68,7 +77,7 @@ echo "<br>";
 // Linnanimi
 $linn = "Tartu";
 
-echo "<ul>";
+
 echo "<ol>";
 
 // 1 Pikkus
@@ -92,10 +101,9 @@ echo "<li>Tähed segamini: " . str_shuffle($linn) . "</li>";
 print_r(str_word_count($linn,2));
 //7
 echo "<li>"."Mitu tähte on sõnades ühesugused Tartu ja Tallinn : ".similar_text($linn,"Tallinn"."</li>");
-echo "</ul>";
 echo "</ol>";
 ?>
-<form name ="tekstkontroll" action="textfunkts.php" method = "post"
+<form name ="tekstkontroll" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method = "post"
     <label for ="linn">Sisesta linnanimi</label>
     <input type="text" id="linn" name="linn">
     <input type="submit" value="Kontrolli">
@@ -109,3 +117,6 @@ if(isset($_REQUEST["linn"])){
         echo $_REQUEST["linn"]." on vale!";
     }
 }
+echo "";
+echo "<br>";
+echo "trer";
