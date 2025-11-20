@@ -6,6 +6,7 @@
         <li><a href="?link=JSmuusika.php">Muusika Küs JS</a>
         <li><a href="?link=ajafunk.php">Ajafunktsioonid</a>
         </li>
+        <li><a href="?link=textfunkts.php">Textfuntsioonid</a>
 
         <li><a href="?link=gitKasutamine.php">Git kasud</a>
         </li>
