@@ -8,6 +8,7 @@ function clearVarsExcept($url, $varname)
     return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
     
 }
+echo "<h1>Textfuntsioonid</h1>>";
 echo "<div class='uuscontainer'>";
 echo "<h3>Tekstfunktsioonid</h3>";
 $tekst = 'Php on skriptikeel serveripoolne';

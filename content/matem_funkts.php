@@ -8,7 +8,9 @@ function clearVarsExcept($url, $varname)
     return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
 
 }
-echo "<div class='matematiika'>";
+echo "<h1>Matemaatika funktsioonid</h1>";
+echo "<div class='uuscontainer'>";
+echo "<div>";
 echo "<h2>Matemaatilised tehted</h2>";
 $arv1= 1.16;
 $arv2= 2.82;
@@ -19,8 +21,8 @@ echo "Lahutamise tulemus - :(".$arv1-$arv2.")"."<br>";
 echo "Korrurise tulemus * :(".$arv1*$arv2.")"."<br>";
 echo "Jagatise tulemus / :(".$arv1/$arv2.")"."<br>";
 echo "</div>";
-echo "<div class='matematiika'>";
-echo "<h3>Matemaatilised funktsioonid</h3>";
+echo "<div>";
+echo "<h2>Matemaatilised funktsioonid</h2>";
 echo"Väiksem arv: ";
 echo min($arv1, $arv2);
 echo"<br>";
@@ -52,7 +54,7 @@ echo "Pi arv: ";
 echo pi();
 echo"<br>";
 echo "</div>";
-echo "<div class='matematiika'>";
+echo "<div>";
 echo "<h2> Omistamise operaatorid</h2>";
 $x = 10;
 $y = 20;
@@ -79,7 +81,8 @@ $format ='Tere, %s %s, arv x: %d';
 printf($format, $perenimi,$nimi, $x);
 echo "<br>";
 echo "</div>";
-echo "<div class='matematiika'>";
+echo "</div>";
+echo "<div>";
 echo "<h2>Arv mõistatus. Arva ära 2 arvu</h2>";
 echo "<br>";
 
@@ -103,6 +106,7 @@ echo "<li>Esimese arvu ruut: " . $num1 *$num1.
     " ja teise arvu ruut: " . $num2*$num2 . "</li>";
 echo "</ol>";
 echo "</div>";
+
 ?>
     <form name ="num1kontroll" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method = "post"
     <label for ="num1">Sisesta esimene arv</label>
