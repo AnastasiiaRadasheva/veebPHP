@@ -8,11 +8,11 @@ function clearVarsExcept($url, $varname)
     return strtok($url, "?")."?$varname=".$_REQUEST[$varname];
 }
 ?>
-<form name ="pilt" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method = "post"
+<form name ="pilt" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method = "post">
   <select name="pildid">
     <option value="">Vali pilt</option>
 <?php
-		$kataloog = 'pildid';
+		$kataloog = 'image/pildidFK';
 		$asukoht=opendir($kataloog);
 		while($rida = readdir($asukoht)){
 			if($rida!='.' && $rida!='..'){
@@ -28,22 +28,17 @@ function clearVarsExcept($url, $varname)
 if (!empty($_POST['pildid'])) {
 
     $pilt = $_POST['pildid'];
-    $pildi_aadress = 'pildid/' . $pilt;
+    $pildi_aadress = 'image/pildidFK/' . $pilt;
 
-    // loeme pildi info
     $pildi_andmed = getimagesize($pildi_aadress);
 
     $laius = $pildi_andmed[0];
     $korgus = $pildi_andmed[1];
     $formaat = $pildi_andmed[2];
 
-    // max mõõdud pisipildile
     $max_laius = 120;
     $max_korgus = 90;
 
-    // ---------------------------
-    //    Suhte arvutamine
-    // ---------------------------
     if ($laius <= $max_laius && $korgus <= $max_korgus) {
         $ratio = 1;
     } elseif ($laius > $korgus) {
@@ -52,15 +47,10 @@ if (!empty($_POST['pildid'])) {
         $ratio = $max_korgus / $korgus;
     }
 
-    // ---------------------------
-    //    Pisipildi mõõdud
-    // ---------------------------
     $pisi_laius = round($laius * $ratio);
     $pisi_korgus = round($korgus * $ratio);
 
-    // ---------------------------
-    //    Väljund
-    // ---------------------------
+
     echo "<h3>Originaal pildi andmed</h3>";
     echo "Laius: $laius px<br>";
     echo "Kõrgus: $korgus px<br>";

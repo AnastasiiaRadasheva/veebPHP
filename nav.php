@@ -10,6 +10,8 @@
                 <li><a href="?link=ajafunk.php">Ajafunktsioonid</a></li>
                 <li><a href="?link=textfunkts.php">Textfuntsioonid</a></li>
                 <li><a href="?link=matem_funkts.php">Matemaatika funktsioonid</a></li>
+                <li><a href="?link=pildid.php">Töö pildifailidega</a></li>
+
 
             </ul>
         </li>
