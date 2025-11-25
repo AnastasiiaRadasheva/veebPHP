@@ -81,7 +81,6 @@ $format ='Tere, %s %s, arv x: %d';
 printf($format, $perenimi,$nimi, $x);
 echo "<br>";
 echo "</div>";
-echo "</div>";
 echo "<div>";
 echo "<h2>Arv mõistatus. Arva ära 2 arvu</h2>";
 echo "<br>";
@@ -106,7 +105,7 @@ echo "<li>Esimese arvu ruut: " . $num1 *$num1.
     " ja teise arvu ruut: " . $num2*$num2 . "</li>";
 echo "</ol>";
 echo "</div>";
-
+echo "</div>";
 ?>
     <form name ="num1kontroll" action="<?=clearVarsExcept($_SERVER['REQUEST_URI'], "link")?>" method = "post"
     <label for ="num1">Sisesta esimene arv</label>
