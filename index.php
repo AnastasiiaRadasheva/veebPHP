@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>PHP tööd</title>
     <link rel="stylesheet" href="style/styleCSS.css">
-    <link rel="stylesheet" href="style/raamatukoguStyle.css">
     <script src="js/muusika.js" defer></script>
     <script src="js/jsSYNjaTANA.js"></script>
 </head>
