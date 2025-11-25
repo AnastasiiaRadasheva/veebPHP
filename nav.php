@@ -7,7 +7,8 @@
         <li><a href="?link=ajafunk.php">Ajafunktsioonid</a>
         </li>
         <li><a href="?link=textfunkts.php">Textfuntsioonid</a>
-
+        <li><a href="?link=matem_funkts.php">Matemaatika funktsioonid</a>
+        </li>
         <li><a href="?link=gitKasutamine.php">Git kasud</a>
         </li>
         <li><a href="https://anastasiiaradasheva24.thkit.ee/" target="_blank">Vana index</a></li>

@@ -1,1 +1,68 @@
 <?php
+echo "<h2>Matemaatilised tehted</h2>";
+$arv1= 1.16;
+$arv2= 2.82;
+echo "Esimene arv on ".$arv1." teine arv on ".$arv2;
+echo "<br>";
+echo "Liitmise tulemus + :(".$arv1+$arv2.")"."<br>";
+echo "Lahutamise tulemus - :(".$arv1-$arv2.")"."<br>";
+echo "Korrurise tulemus * :(".$arv1*$arv2.")"."<br>";
+echo "Jagatise tulemus / :(".$arv1/$arv2.")"."<br>";
+echo "<h3>Matemaatilised funktsioonid</h3>";
+echo"Väiksem arv: ";
+echo min($arv1, $arv2);
+echo"<br>";
+echo"Suurem arv: ";
+echo max($arv1, $arv2);
+echo"<br>";
+echo "Ümardamine täisarvani - funk round()(arv) : ";
+echo round($arv1);
+echo"<br>";
+echo "Ümardab jargmise arvuni ";
+echo ceil($arv1);
+echo"<br>";
+echo "Ümardab allapoole täisarvani - floor(arv1):  ";
+echo floor($arv1);
+echo"<br>";
+echo "Ümardab ühe komma kohtani - round(arv1, 1): ";
+echo round($arv1, 1);
+echo"<br>";
+echo "Min 1 Max 100 juhuslik arv - rand(1, 100) : ";
+echo rand(1, 100);
+echo"<br>";
+echo "Asendamine - pow(arv1, 2): ";
+echo pow($arv1, 2);
+echo"<br>";
+echo "Ruutjuur - sqrt(arv1): ";
+echo sqrt($arv1);
+echo"<br>";
+echo "Pi arv: ";
+echo pi();
+echo"<br>";
+
+echo "<h2> Omistamise operaatorid</h2>";
+$x = 10;
+$y = 20;
+$x ++;// $x = $x+1
+echo "Suurendamine ühe võrra";
+echo $x;
+echo "<br>";
+echo "Vahendamine ühe võrra";
+$x --;
+echo $x;
+echo "<br>";
+$x*=$y;// x = x*y
+echo $x;
+echo "<br>";
+$x/=$y;// x = x/y
+echo $x;
+echo "<br>";
+$nimi = 'Nastja';
+$perenimi = 'Radasheva';
+//$nimi .= $perenimi;
+echo $nimi;
+echo "<br>";
+$format ='Tere, %s %s, arv x: %d';
+printf($format, $perenimi,$nimi, $x);
+echo "<br>";
+echo "<h2>Mõistatus.Arva ära Eesti linnanimi</h2>";
