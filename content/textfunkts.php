@@ -105,6 +105,7 @@ echo "<li>Tagurpidi:" . strrev($linn) . "</b></li>";
 // 5 Segatud tähed
 echo "<li>Tähed segamini: " . str_shuffle($linn) . "</li>";
 
+
 //6 Massiivv
 print_r(str_word_count($linn,2));
 //7
