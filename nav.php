@@ -15,6 +15,12 @@
 
             </ul>
         </li>
+        <li><a href="#">Mobilli mall</a>
+            <ul class="dropdown">
+                <li><a href="?link=p2is.php">Mobillimalli järgi veebilehestik(näide)</a></li>
+                <li><a href="?link=anekdotleh.php" target="_blank">Anekdootid</a></li>
+            </ul>
+        </li>
         <li><a href="?link=gitKasutamine.php">Git kasud</a>
         </li>
         <li><a href="https://anastasiiaradasheva24.thkit.ee/" target="_blank">Vana index</a></li>
