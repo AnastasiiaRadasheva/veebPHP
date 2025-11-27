@@ -13,11 +13,11 @@ maximum-scale=1.0;">
 <div id="header">
     <div class="nav">
         <ul>
-            <li><a href="esmaspaev.php">E</a></li>
-            <li><a href="teisipaev.php">T</a></li>
-            <li><a href="kolmapaev.php">K</a></li>
-            <li><a href="neljapaev.php">N</a></li>
-            <li><a href="reede.php">R</a></li>
+            <li><a href="?link=mobilimail/esmaspaev.php">E</a></li>
+            <li><a href="?link=mobilimail/teisipaev.php">T</a></li>
+            <li><a href="?link=mobilimail/kolmapaev.php">K</a></li>
+            <li><a href="?link=mobilimail/neljapaev.php">N</a></li>
+            <li><a href="?link=mobilimail/reede.php">R</a></li>
         </ul>
     </div>
 </div>

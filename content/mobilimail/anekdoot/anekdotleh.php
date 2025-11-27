@@ -22,7 +22,3 @@ include("nav.php");
 
 <div class="clear"></div>
 
-<?php
-//jalus
-include("jalus.php");
-?>

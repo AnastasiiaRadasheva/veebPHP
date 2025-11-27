@@ -1,6 +1,6 @@
 <?php require("anekdotleh.php"); ?>
 <div id="anekdot">
-    <h2>Kolmapäev</h2>
+    <h2>Esimene</h2>
 
     <ol>
         <li>Matemaatika</li>
@@ -9,3 +9,8 @@
     </ol>
 
 </div>
+
+<?php
+//jalus
+include("jalus.php");
+?>

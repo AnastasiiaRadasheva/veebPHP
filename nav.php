@@ -17,8 +17,8 @@
         </li>
         <li><a href="#">Mobilli mall</a>
             <ul class="dropdown">
-                <li><a href="?link=p2is.php">Mobillimalli järgi veebilehestik(näide)</a></li>
-                <li><a href="?link=anekdotleh.php" target="_blank">Anekdootid</a></li>
+                <li><a href="?link=mobilimail/p2is.php">Mobillimalli järgi veebilehestik(näide)</a></li>
+                <li><a href="?link=mobilimail/anekdoot/anekdotleh.php" target="_blank">Anekdootid</a></li>
             </ul>
         </li>
         <li><a href="?link=gitKasutamine.php">Git kasud</a>
