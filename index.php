@@ -5,6 +5,7 @@
     <title>PHP tööd</title>
     <link rel="stylesheet" href="style/styleCSS.css">
     <script src="js/muusika.js" defer></script>
+
     <script src="js/jsSYNjaTANA.js"></script>
 </head>
 <body>
